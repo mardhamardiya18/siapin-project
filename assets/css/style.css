@@ -23,9 +23,6 @@ body{
 }
 
 
-header .container, .container.about-wrapper{
-    max-width: 1600px;
-}
 
 header{
     min-height: 100vh;
