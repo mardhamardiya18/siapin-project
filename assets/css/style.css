@@ -17,13 +17,13 @@ html body *{
     list-style: none;
 }
 
-html body{
-    background-color: var(--body1-color) ;
+body{
+    background-color: var(--body1-color) !important ;
     font-family: 'Rubik', sans-serif;
 }
 
 
-header .container{
+header .container, .container.about-wrapper{
     max-width: 1600px;
 }
 
@@ -31,6 +31,7 @@ header{
     min-height: 100vh;
     padding-top: 15rem;
 }
+
 
 /* navbar start */
 .navbar-nav .nav-item{
@@ -89,10 +90,11 @@ header{
     height: 1000px;
     margin-top: -150px;
     border-radius: 100px 100px 0 0;
+    padding-top: 50px;
 }
 /* about end*/
 
-/* Media query */
+/* Media query
 @media screen and (max-width: 1200px) {
     header{
         padding-top: 12rem;
@@ -139,4 +141,4 @@ header{
     .nav-wrapper #navbarNav{
         background-color: var(--body1-color);
     }
-}
+} */
