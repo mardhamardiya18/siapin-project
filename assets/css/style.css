@@ -1,0 +1,142 @@
+:root{
+    /* font */
+    --heading-font: 'Merriweather', serif;
+    --main-font : 'Rubik', sans-serif;
+
+    /* color */
+    --hijau-pallet : #309565;
+    --kuning-pallet : #F0B43B;
+    --orange-pallet: #EA7E4A;
+    --hitam-pallet: #1F4533;
+    --body1-color: #E9F2E5;
+    --body2-color: #F6F5EE;
+    --body3-color: #E4E2E0;
+}
+html body *{
+    text-decoration: none;
+    list-style: none;
+}
+
+html body{
+    background-color: var(--body1-color) ;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+header .container{
+    max-width: 1600px;
+}
+
+header{
+    min-height: 100vh;
+    padding-top: 15rem;
+}
+
+/* navbar start */
+.navbar-nav .nav-item{
+    margin: 0 30px;
+}
+.navbar-nav .nav-item .nav-link{
+    font-size: 1.563rem;
+    font-weight: 400;
+    color: var(--hitam-pallet);
+ }
+ .navbar-nav .nav-item .nav-link.active{
+    font-weight: 700;
+    color: var(--hitam-pallet);
+ }
+/* navbar end */
+
+/* header start */
+ .content-left .content-wrapper{
+    padding-left: 10em;
+}
+.content-left .content-wrapper  h1{
+    font-size: 4.063rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+    color: var(--hitam-pallet);
+}
+.content-left .content-wrapper .button-home{
+    margin-top: 130px;
+}
+.content-left .button-home .gabung{
+    background-color: var(--hijau-pallet);
+    color: #fff;
+    padding: 25px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.content-left .button-home .explore{
+    background-color: #fff;
+    color: var(--hijau-pallet);
+    padding: 25px 50px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin-left: 30px;
+    font-weight: 500;
+}
+.container-fluid .content-right img{
+    z-index: -100;
+}
+/* header end */
+
+/* about start */
+.about{
+    background-color: var(--body2-color);
+    width: 100%;
+    height: 1000px;
+    margin-top: -150px;
+    border-radius: 100px 100px 0 0;
+}
+/* about end*/
+
+/* Media query */
+@media screen and (max-width: 1200px) {
+    header{
+        padding-top: 12rem;
+    }
+    .navbar-nav .nav-item .nav-link{
+        font-size: 1.2rem;
+     }
+
+    .content-left .content-wrapper{
+        padding-left: 20px;
+        
+    }
+    .content-left .content-wrapper  h1{
+        font-size: 3rem;
+    }
+    .container-fluid .content-right img{
+       width: 600px;
+       height: 525px;
+    }
+    .content-left .button-home .gabung{
+        padding: 20px 25px;
+        font-size: 1rem;  
+    }
+    .content-left .button-home .explore{
+        padding: 20px 45px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content-left .content-wrapper  h1{
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    .content-left .content-wrapper  .button-home{
+        text-align: center;
+       margin-top: 100px;
+    }
+    .container-fluid .content-right img{
+        width: 480px;
+        height: 480px;
+       
+     }
+    .nav-wrapper #navbarNav{
+        background-color: var(--body1-color);
+    }
+}
