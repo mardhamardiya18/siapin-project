@@ -14,9 +14,15 @@
         href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Rubik:wght@300;400;500;700&display=swap"
         rel="stylesheet">
 
+    <!-- Box Icon -->
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -26,7 +32,7 @@
 </head>
 
 <body>
-
+    <!-- NAVBAR START -->
     <nav class="navbar navbar-expand-lg fixed-top  navbar-light">
         <div class="container-fluid nav-wrapper py-4">
             <a class="navbar-brand" href="#">
@@ -55,7 +61,9 @@
             </div>
         </div>
     </nav>
+    <!-- NAVBAR END -->
 
+    <!-- HEADER START -->
     <header>
         <div class="container-fluid home pr-0 vh-100 justify-content-center align-items-center d-flex">
             <div class="row align-items-center">
@@ -76,7 +84,9 @@
             </div>
         </div>
     </header>
+    <!-- HEADER END -->
 
+    <!-- ABOUT START -->
     <section class="about">
         <div class="container-fluid about-wrapper">
             <div class="row">
@@ -119,15 +129,13 @@
                 </div>
 
                 <div class="col-lg-6 mt-5">
-                    <h1 class="headline-about mb-lg-4">Apasih Siapin itu?</h1>
-                    <p class="subheadline-about">Siapin merupakan sebuah platform yang menyediakan wadah informasi
+                    <h1 class="heading-about mb-lg-4">Apasih Siapin itu?</h1>
+                    <p class="subheading-about">Siapin merupakan sebuah platform yang menyediakan wadah informasi
                         terkait pekerjaan seperti
                         lowongan kerja, bimbingan karir, pelatihan dan pengembangan profesional, hingga beragam
                         fasilitas yang dapat dimanfaatkan oleh anak muda.</p>
                     <a href="#" class="btn-more">Selengkapnya</a>
-                    <div class="img-about">
-                        <img src="assets/img/about-img.png" alt="">
-                    </div>
+                    <img src="assets/img/about-img.png" class="d-block mt-5 img-fluid" alt="">
 
                 </div>
 
@@ -135,6 +143,151 @@
 
         </div>
     </section>
+    <!--ABOUT END  -->
+
+    <!-- PROFESI START -->
+    <section class="profesi" id="profesi">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg">
+                    <h1 class="heading-profesi mb-4">Profesi?</h1>
+                    <p class="subheading-profesi">Siapin merupakan sebuah platform yang menyediakan wadah informasi
+                        terkait pekerjaan seperti lowongan kerja.</p>
+                </div>
+            </div>
+            <div class="row row-slider mt-5">
+                <div class="col-lg">
+
+                    <!-- Swiper -->
+                    <div class="swiper mySwiper">
+                        <div class="btn-slider-profesi"><img src="assets/img/slider.png" alt="">
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card-profesi">
+                                <img src="assets/img/profesi1.png" class="img-fluid" alt="">
+                                <div class="desc">
+                                    <h3>Photographer</h3>
+                                    <a class="text-primary">Detail Profesi</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-profesi">
+                                <img src="assets/img/profesi1.png" class="img-fluid" alt="">
+                                <div class="desc">
+                                    <h3>Photographer</h3>
+                                    <a class="text-primary">Detail Profesi</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-profesi">
+                                <img src="assets/img/profesi1.png" class="img-fluid" alt="">
+                                <div class="desc">
+                                    <h3>Photographer</h3>
+                                    <a class="text-primary">Detail Profesi</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-profesi">
+                                <img src="assets/img/profesi1.png" class="img-fluid" alt="">
+                                <div class="desc">
+                                    <h3>Photographer</h3>
+                                    <a class="text-primary">Detail Profesi</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-profesi">
+                                <img src="assets/img/profesi1.png" class="img-fluid" alt="">
+                                <div class="desc">
+                                    <h3>Photographer</h3>
+                                    <a class="text-primary">Detail Profesi</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- PROFESI END -->
+
+    <!-- SYARAT START -->
+    <section class="require" id="require">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <img src="assets/img/syarat.png" class="img-fluid m-auto d-block" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SYARAT END -->
+
+    <!-- STEPS START -->
+    <section class="step" id="step">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img src="assets/img/step.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="heading-step mb-4">Steps Working</h1>
+                    <p class="subheading-step">Lorem ipsum dolor sit amet,consectetur adipiscing elit. Amet metus
+                        blandit ac elit sit vitae amet.Lorem ipsum dolor sit amet,consectetur adipiscing elit. Amet
+                        metus blandit ac elit sit vitae amet.</p>
+
+                    <!-- Swiper -->
+                    <div class="slider-step mt-5 d-flex align-items-center">
+                        <div class="toggle d-flex flex-column mr-4">
+                            <i class='bx bxs-up-arrow' style='color:#309565'></i>
+                            <i class='bx bxs-down-arrow' style='color:#309565'></i>
+                        </div>
+                        <div class="swiper mySwiperStep">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide d-flex align-items-center">
+                                    <div class="nomor mr-3">
+                                        <p>1</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!</p>
+                                </div>
+                                <div class="swiper-slide d-flex align-items-center">
+                                    <div class="nomor mr-3">
+                                        <p>2</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!</p>
+                                </div>
+                                <div class="swiper-slide d-flex align-items-center">
+                                    <div class="nomor mr-3">
+                                        <p>3</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!</p>
+                                </div>
+                                <div class="swiper-slide d-flex align-items-center">
+                                    <div class="nomor mr-3">
+                                        <p>4</p>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!</p>
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="slider-step ">
+                        
+                        <div class="content-slider d-flex align-items-center">
+                            <div class="nomor mr-3">
+                                <p>1</p>
+                            </div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, animi!</p>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- STEPS END -->
+
+
 
     <!-- Bootstrap 5 scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -143,6 +296,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 

@@ -13,9 +13,11 @@
     --body3-color: #E4E2E0;
 }
 
+
 body{
     background-color: var(--body1-color) !important ;
     font-family: 'Rubik', sans-serif;
+    overflow-x: hidden !important;
 
 }
 
@@ -84,7 +86,7 @@ body{
     background-color: var(--body2-color);
     width: 100%; 
     border-radius: 50px 50px 0 0;
-    padding-top: 50px;
+    padding: 100px 0;
     margin-top: -50px;
 }
 .about .box-list{
@@ -130,13 +132,13 @@ position: absolute;
     
 
 }
-.about .headline-about{
+.about .heading-about{
     font-family: var(--heading-font);
     font-weight: 700;
     color: var(--hitam-pallet);
     font-size: 36px;
 }
-.about .subheadline-about{
+.about .subheading-about{
     color: var(--hitam-pallet);
 }
 .about .btn-more{
@@ -153,3 +155,100 @@ position: absolute;
     height: 100%;
 }
 /* about end*/
+
+/* Profesi start */
+.profesi{
+    padding: 100px 0;
+}
+.profesi .heading-profesi{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--hitam-pallet);
+    font-size: 36px;
+}
+.profesi .subheading-profesi{
+    color: var(--hitam-pallet);
+    max-width: 600px;
+}
+.profesi .row-slider{
+    position: relative;
+}
+.profesi .btn-slider-profesi{
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 10;
+    
+}
+
+.profesi .swiper-slide{
+    background-color: #fff;
+    max-width: 600px;
+    border-radius: 15px;
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    align-items: center;
+}
+.profesi .card-profesi img{
+    width: 150px;
+}
+/* Profesi end */
+
+/* Syarat start */
+.require{
+    padding: 100px 0;
+    background-color: var(--body3-color);
+}
+
+/* Syarat end */
+
+/* step start */
+.step{
+    padding: 100px 0;
+}
+.step .heading-step{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--hitam-pallet);
+    font-size: 36px;
+}
+.step .subheading-step{
+    color: var(--hitam-pallet);
+}
+
+.slider-step .toggle i{
+    font-size: 60px;
+}
+.slider-step .content-slider{
+    background-color: #fff;
+    width: 100%;
+    min-height: 150px;
+    border-radius: 15px;
+    padding: 0 20px;
+    
+}
+.swiper-slide .nomor p{
+    background-color: var(--orange-pallet);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.4rem;
+
+}
+.content-slider p{
+    font-size: 20px;
+}
+
+.step .swiper {
+    width: 100%;
+    max-height: 150px;
+    background-color: violet;
+    border-radius: 15px;
+    padding: 0 20px;
+  }
+/* step end */
