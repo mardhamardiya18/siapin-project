@@ -191,6 +191,7 @@ position: absolute;
     padding: 20px;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
 }
 .profesi .card-profesi img{
     width: 150px;
@@ -247,8 +248,67 @@ position: absolute;
 .step .swiper {
     width: 100%;
     max-height: 150px;
-    background-color: violet;
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     padding: 0 20px;
   }
 /* step end */
+
+/* video start */
+.video{
+    padding: 100px 0;
+}
+.video img{
+    cursor: pointer;
+}
+/* video end */
+
+/* blog start */
+.blog{
+    padding: 100px 0;
+}
+.blog .btn-blog{
+    background-color: var(--hijau-pallet);
+    font-weight: 500;
+}
+.blog .heading-blog{
+    font-family: var(--heading-font);
+    color: var(--hitam-pallet);
+}
+.blog .card-wrapper{
+    position: relative;
+    max-width: 380px;
+    background-color: #fff;
+    border-radius: 15px;
+    min-height: 500px;
+    padding-top: 220px;
+}
+.blog .card-wrapper img{
+    position: absolute;
+    top: 0;
+}
+.blog .card-wrapper .content-card{
+    position: relative;
+    padding: 50px 20px;
+    
+ }
+ .card-wrapper .content-card .label{
+     position: absolute;
+     top: 0;
+     background-color: var(--orange-pallet);
+ }
+ .blog .row-blog{
+     position: relative;
+ }
+.blog .btn-slider-blog{
+    right: -20px;
+    top: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+/* blog end */

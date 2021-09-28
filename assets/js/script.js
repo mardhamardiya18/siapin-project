@@ -8,8 +8,16 @@ $(window).on("scroll", function (e) {
 });
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 3,
     spaceBetween: 30,
+    spaceBetween: 30,
+    centeredSlides: false,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        slideShadows: false,
+    },
     navigation: {
         nextEl: ".btn-slider-profesi",
     },
@@ -23,5 +31,21 @@ var swiper2 = new Swiper(".mySwiperStep", {
     navigation: {
         nextEl: ".bxs-down-arrow",
         prevEl: ".bxs-up-arrow"
+    },
+});
+
+var swiper3 = new Swiper(".mySwiperBlog", {
+    spaceBetween: 30,
+    centeredSlides: false,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        slideShadows: false,
+    },
+    navigation: {
+        nextEl: ".btn-slider-blog",
+        prevEl: ".swiper-button-prev",
     },
 });
