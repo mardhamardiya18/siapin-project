@@ -13,12 +13,14 @@
     --body3-color: #E4E2E0;
 }
 
+html, body{
+    overflow-x: hidden;
+}
 
 body{
     background-color: var(--body1-color) !important ;
     font-family: 'Rubik', sans-serif;
    
-
 }
 
 
@@ -209,6 +211,7 @@ position: absolute;
 /* step start */
 .step{
     padding: 100px 0;
+    background-color: var(--body2-color);
 }
 .step .heading-step{
     font-family: var(--heading-font);
@@ -257,6 +260,7 @@ position: absolute;
 /* video start */
 .video{
     padding: 100px 0;
+    
 }
 .video img{
     cursor: pointer;
@@ -266,6 +270,7 @@ position: absolute;
 /* blog start */
 .blog{
     padding: 100px 0;
+    background-color: var(--body3-color);
 }
 .blog .btn-blog{
     background-color: var(--hijau-pallet);
@@ -314,6 +319,7 @@ position: absolute;
 /* testi start */
 .testi{
     padding: 100px 0 ;
+    background-color: var(--body2-color);
 }
 .testi .heading-testi{
     font-family: var(--heading-font);
@@ -354,3 +360,53 @@ position: absolute;
     max-width: 750px;
 }
 /* testi end */
+
+/* faq start */
+.faq{
+    padding: 100px 0;
+
+}
+.faq .heading-faq{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--hitam-pallet);
+    font-size: 36px;
+}
+.faq .subheading-faq{
+    color: var(--hitam-pallet);
+}
+.faq .box-wrapper{
+    border-radius: 10px;
+}
+.faq .question{
+    position: relative;
+}
+.faq .question .title{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.faq .question .title::before{
+ content: '+';
+ position: absolute;
+ right: 20px;
+ top: 50%;
+ transform: translateY(-50%);
+ font-size: 1.8rem;
+
+}
+
+.faq .answer{
+    height: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    transition: .5s ease-in-out;
+}
+.faq .box-wrapper.active .answer{
+    height: 150px;
+    padding: 20px;
+    transition: .5s ease-in-out;
+}
+.faq .box-wrapper.active .title::before{
+    content: '-';
+}
+/* faq end */
