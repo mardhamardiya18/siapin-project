@@ -22,6 +22,9 @@ body{
     font-family: 'Rubik', sans-serif;
    
 }
+p, h1{
+    color: var(--hitam-pallet);
+}
 
 
 
@@ -274,11 +277,12 @@ position: absolute;
 }
 .blog .btn-blog{
     background-color: var(--hijau-pallet);
-    font-weight: 500;
+    font-weight: 400;
 }
 .blog .heading-blog{
     font-family: var(--heading-font);
     color: var(--hitam-pallet);
+    font-size: 36px;
 }
 .blog .card-wrapper{
     position: relative;
@@ -382,6 +386,7 @@ position: absolute;
     position: relative;
 }
 .faq .question .title{
+    color: var(--hitam-pallet);
     font-size: 1.2rem;
     font-weight: 500;
 }
@@ -410,3 +415,94 @@ position: absolute;
     content: '-';
 }
 /* faq end */
+
+/* subs start */
+.subs{
+    padding: 150px 0;
+}
+.subs .box-wrapper{
+    max-width: 780px;
+    min-height: 350px;
+    padding: 20px 0;
+    position: relative;
+}
+.subs .label{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--kuning-pallet);
+    padding: 20px 30px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+.subs .box{
+    background: #FFFFF6;
+    max-width: 740px;
+    min-height: 290px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    flex-direction: column;
+}
+.subs .box .form{
+    background-color: #ffffff;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.075);
+    width: 80%;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+.box .form input, input::placeholder, input:active{
+    border: none;
+    outline: none;
+    color: rgba(0, 0, 0, 0.287);
+}
+.box .form .btn-subs{
+    background-color: var(--hijau-pallet);
+    color: #fff;
+}
+
+.subs .orn{
+    position: absolute;
+    bottom: 0; right: 0;
+    width: 700px;
+    min-height: 250px;
+    background-color: var(--orange-pallet);
+    border-radius: 15px;
+    z-index: -1;
+}
+/* subs end */
+
+@media screen and (max-width: 1500px) {
+    .content-left .content-wrapper  h1{
+        font-size: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .subs .label{
+        font-size: 15px;
+    }
+    .blog .btn-blog{
+       font-size: 15px;
+       padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .subs .label{
+        font-size: 12px;
+    }
+    .blog .btn-blog{
+       font-size: 15px;
+       padding: 10px 15px;
+    }
+}
