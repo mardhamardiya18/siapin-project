@@ -309,6 +309,48 @@ position: absolute;
     cursor: pointer;
 }
 
-
-
 /* blog end */
+
+/* testi start */
+.testi{
+    padding: 100px 0 ;
+}
+.testi .heading-testi{
+    font-family: var(--heading-font);
+    font-weight: 700;
+    color: var(--hitam-pallet);
+    font-size: 36px;
+}
+.testi .subheading-testi{
+    color: var(--hitam-pallet);
+}
+.testi .card-wrapper{
+    max-width: 750px;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+.testi .username{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.testi .body-testi{
+    position: relative;
+    padding: 50px 0;
+}
+.testi .body-testi .bxs-quote-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 2.5rem;
+}
+.testi .body-testi .bxs-quote-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    font-size: 2.5rem;
+}
+.testi .swiper{
+    max-width: 750px;
+}
+/* testi end */

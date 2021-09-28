@@ -49,3 +49,24 @@ var swiper3 = new Swiper(".mySwiperBlog", {
         prevEl: ".swiper-button-prev",
     },
 });
+
+var swiper4 = new Swiper(".mySwiperTesti", {
+    spaceBetween: 10,
+    grabCursor: true,
+    centeredSlides: false,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 0,
+        slideShadows: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+
+});
