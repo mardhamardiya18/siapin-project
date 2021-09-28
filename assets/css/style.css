@@ -481,6 +481,22 @@ position: absolute;
 }
 /* subs end */
 
+/* footer start */
+.footer{
+    padding-top: 100px;
+    background-color: var(--body2-color);
+    border-radius: 50px 50px 0 0 ;
+}
+/* footer end */
+
+
+
+
+
+
+
+
+
 @media screen and (max-width: 1500px) {
     .content-left .content-wrapper  h1{
         font-size: 40px;
