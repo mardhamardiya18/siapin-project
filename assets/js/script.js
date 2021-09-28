@@ -51,7 +51,7 @@ var swiper3 = new Swiper(".mySwiperBlog", {
 });
 
 var swiper4 = new Swiper(".mySwiperTesti", {
-    spaceBetween: 10,
+    spaceBetween: 0,
     grabCursor: true,
     centeredSlides: false,
     slidesPerView: "auto",
