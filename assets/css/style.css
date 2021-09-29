@@ -53,9 +53,7 @@ p, h1{
 /* navbar end */
 
 /* header start */
- .content-left .content-wrapper{
-    padding-left: 10px;
-}
+
 .content-left .content-wrapper  h1{
     font-size: 45px;
     font-family: 'Merriweather', serif;
@@ -245,6 +243,7 @@ position: absolute;
     line-height: 50px;
     text-align: center;
     font-size: 1.4rem;
+    color: #fff;
 
 }
 .content-slider p{
