@@ -176,14 +176,39 @@ position: absolute;
 .profesi .row-slider{
     position: relative;
 }
-.profesi .btn-slider-profesi{
+.profesi .btn-slider-profesi-right{
     position: absolute;
-    font-size: 50px;
+    width: 49px;
+    height: 49px;
     top: 50%;
     transform: translateY(-50%);
     right: 0;
-    z-index: 10;
-    
+    z-index: 10; 
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profesi .btn-slider-profesi-left{
+    position: absolute;
+    width: 49px;
+    height: 49px;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 10; 
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.profesi .btn-slider-profesi-right, .btn-slider-profesi-left i{
+    color: var(--hijau-pallet);
+    font-size: 60px;
 }
 
 .profesi .swiper-slide{
@@ -283,32 +308,29 @@ position: absolute;
     color: var(--hitam-pallet);
     font-size: 36px;
 }
-.blog .card-wrapper{
+.blog .card{
     position: relative;
-    max-width: 380px;
     background-color: #fff;
     border-radius: 15px;
-    min-height: 500px;
-    padding-top: 220px;
 }
 .blog .card-wrapper img{
     position: absolute;
     top: 0;
 }
-.blog .card-wrapper .content-card{
+.blog .card .card-body{
     position: relative;
     padding: 50px 20px;
     
  }
- .card-wrapper .content-card .label{
+ .card .card-body .label{
      position: absolute;
-     top: 0;
+     top: -20px;
      background-color: var(--orange-pallet);
  }
  .blog .row-blog{
      position: relative;
  }
-.blog .btn-slider-blog{
+.blog .btn-slider-blog-right{
     right: -20px;
     top: 50%;
     transform: translateX(-50%);
@@ -316,6 +338,19 @@ position: absolute;
     z-index: 10;
     cursor: pointer;
 }
+.blog .btn-slider-blog-left{
+    left: 25px;
+    top: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 10;
+    cursor: pointer;
+}
+.blog .btn-slider-blog-right, .btn-slider-blog-left  i{
+    color: var(--hijau-pallet);
+    font-size: 60px;
+}
+
 
 /* blog end */
 
@@ -519,5 +554,8 @@ position: absolute;
     .blog .btn-blog{
        font-size: 15px;
        padding: 10px 15px;
+    }
+    .profesi .card-profesi img{
+        width: 100px;
     }
 }

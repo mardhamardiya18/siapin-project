@@ -43,7 +43,16 @@ var swiper = new Swiper(".mySwiper", {
         slideShadows: false,
     },
     navigation: {
-        nextEl: ".btn-slider-profesi",
+        nextEl: ".btn-slider-profesi-right",
+        prevEl: ".btn-slider-profesi-left",
+    },
+    pagination: {
+        el: ".swiper-pagination-profesi",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
 });
 
@@ -51,6 +60,7 @@ var swiper2 = new Swiper(".mySwiperStep", {
     direction: "vertical",
     pagination: {
         clickable: true,
+
     },
     navigation: {
         nextEl: ".bxs-down-arrow",
@@ -69,8 +79,16 @@ var swiper3 = new Swiper(".mySwiperBlog", {
         slideShadows: false,
     },
     navigation: {
-        nextEl: ".btn-slider-blog",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".btn-slider-blog-right",
+        prevEl: ".btn-slider-blog-left",
+    },
+    pagination: {
+        el: ".swiper-pagination-blog",
+        clickable: true,
+    },
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
 });
 
