@@ -28,6 +28,9 @@ p, h1{
 
 
 
+
+
+
 /* navbar start */
 .navbar.show{
     background-color: var(--body1-color);
@@ -186,9 +189,7 @@ position: absolute;
     z-index: 10; 
     background-color: white;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 
 }
 .profesi .btn-slider-profesi-left{
@@ -201,9 +202,7 @@ position: absolute;
     z-index: 10; 
     background-color: white;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+   
 
 }
 .profesi .btn-slider-profesi-right, .btn-slider-profesi-left i{
@@ -331,6 +330,10 @@ position: absolute;
      position: relative;
  }
 .blog .btn-slider-blog-right{
+    background-color: #fff;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
     right: -20px;
     top: 50%;
     transform: translateX(-50%);
@@ -339,6 +342,10 @@ position: absolute;
     cursor: pointer;
 }
 .blog .btn-slider-blog-left{
+    background-color: #fff;
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
     left: 25px;
     top: 50%;
     transform: translateX(-50%);
