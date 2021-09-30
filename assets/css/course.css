@@ -1,0 +1,250 @@
+:root{
+    /* font */
+    --heading-font: 'Merriweather', serif;
+    --main-font : 'Rubik', sans-serif;
+
+    /* color */
+    --hijau-pallet : #309565;
+    --kuning-pallet : #F0B43B;
+    --orange-pallet: #EA7E4A;
+    --hitam-pallet: #1F4533;
+    --body1-color: #E9F2E5;
+    --body2-color: #F6F5EE;
+    --body3-color: #E4E2E0;
+}
+
+*{
+    text-decoration: none !important;
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--body1-color) !important ;
+    font-family: 'Rubik', sans-serif;
+   
+}
+p, h1{
+    color: var(--hitam-pallet);
+}
+/* navbar start */
+.navbar.show{
+    background-color: var(--body1-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.075);
+}
+.navbar-nav .nav-item{
+    margin: 0 30px;
+}
+.navbar-nav .nav-item .nav-link{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--hitam-pallet);
+ }
+ .navbar-nav .nav-item .nav-link.active{
+    font-weight: 700;
+    color: var(--hitam-pallet);
+ }
+ .navbar .btn-login{
+     border: 2px solid var(--hijau-pallet);
+     color: var(--hijau-pallet);
+     transition: .3s ease-in-out;
+ }
+ .navbar .btn-login:hover{
+    border: 2px solid var(--hijau-pallet);
+    background-color: var(--hijau-pallet);
+    color: #fff;
+    transition: .3s ease-in-out;
+ }
+ .navbar .btn-register{
+    border: 2px solid var(--hijau-pallet);
+     background-color: var(--hijau-pallet);
+     color: #fff;
+     transition: .3s ease-in-out;
+ }
+ .navbar .btn-register:hover{
+     background-color: #fff;
+     color: var(--hijau-pallet);
+     transition: .3s ease-in-out;
+     border: 2px solid white;
+ }
+ /* NAVBAR END */
+
+ /* HOME START */
+ .home .row{
+     padding: 10rem 8rem;
+     border-radius: 40px;
+ }
+ .home .heading-home{
+    font-size: 45px;
+    font-family: var(--heading-font);
+    width: 85%;
+    line-height: 65px;
+    color: var(--hitam-pallet);
+ }
+ .home .form-input{
+     width: 80%;
+     border-radius: 20px;
+     border: 2px solid var(--hijau-pallet);
+ }
+ .form-input input{
+     border: none;
+     width: 90%;
+ }
+ .form-input input::placeholder{
+     font-size: 16px;
+     letter-spacing: 3px;
+     color: rgba(68, 68, 68, 0.479);
+ }
+ .form-input input:focus{
+     outline: none;
+ }
+ .form-input i{
+    background-color: var(--hijau-pallet);
+    color: #fff;
+    padding: 10px 17px;
+    font-size: 1.5rem;
+ }
+ .form-input i:hover{
+    background-color: #fff;
+    color: var(--hijau-pallet);
+ }
+ .home p{
+     font-size: 14px;
+     color: var(--hitam-pallet);
+ }
+ /* HOME END */
+
+ /* Course Start */
+ .course{
+     background-color: var(--body2-color);
+     padding: 50px 20px;
+     border-radius: 40px 40px 0 0 ;
+ }
+ .course .heading-course{
+    font-size: 36px;
+    font-family: var(--heading-font);
+    width: 85%;
+    line-height: 65px;
+    color: var(--hitam-pallet);
+ }
+ .course .tab{
+     font-size: 20px;
+     border: 2px solid var(--hijau-pallet);
+     padding: 10px 20px;
+     border-radius: 10px;
+     cursor: pointer;
+ }
+ .course .tab:hover{
+    background-color: var(--hijau-pallet);
+    color: #fff;
+ }
+ .course .tab.active{
+     background-color: var(--hijau-pallet);
+     color: #fff;
+ }
+ .card{
+     position: relative;
+     padding-top: 100px;
+     height: 450px;
+     overflow-y: hidden;
+     margin: 10px;
+ }
+ .card .card-body{
+     border-radius: 20px 20px 0 0 !important;
+     z-index: 1;
+     background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    height: 165px;
+    transition: .5s ease-in-out;
+ }
+ .card:hover .card-body{
+     height: 330px;
+     transition: .5s ease-in-out;
+ }
+ .card .btn-daftar{
+     background-color: var(--hijau-pallet);
+     color: #fff;
+     margin: auto;
+     display: inline-block;
+ }
+ .card .btn-daftar:hover{
+    background-color: #fff;
+    color: var(--hijau-pallet);
+    transition: .4s ease-in-out;
+ }
+ .card img{
+     position: absolute;
+     top: 0;
+ }
+ .card .label{
+     background-color: var(--orange-pallet);
+    width: 30%;
+    border-radius: 5px;
+    color: #fff;
+ }
+ .card .title-card{
+     font-size: 25px;
+ }
+ .card .detail-item p{
+     font-size: 14px;
+     margin-left: 5px;
+ }
+ /* Course End */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ @media screen and (max-width: 1500px) {
+    .home .row{
+        padding: 4rem 2rem;
+        border-radius: 40px;
+    }
+ }
+
+ @media screen and (max-width: 768px) {
+    .home .heading-home{
+       font-size: 36px;
+       line-height: 50px;
+    }
+    .home .row{
+        padding: 3rem 2rem;
+        border-radius: 40px;
+    }
+ }
+
+ @media screen and (max-width: 450px) {
+    .form-input input{
+        width: 100%;
+    }
+    .home .row{
+        padding: 3rem 0;
+        border-radius: 40px;
+    }
+    .form-input input::placeholder{
+        font-size: 12px;
+        letter-spacing: 1px;
+    }
+    .home .heading-home{
+        font-size: 30px;
+        line-height: 45px;
+     }
+     .form-input i{
+        padding: 8px 15px;
+        font-size: 1.5rem;
+     }
+ }

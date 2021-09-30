@@ -223,6 +223,10 @@ position: absolute;
 .profesi .card-profesi img{
     width: 150px;
 }
+.profesi .card-profesi a{
+    cursor: pointer;
+    text-decoration: none;
+}
 /* Profesi end */
 
 /* Syarat start */

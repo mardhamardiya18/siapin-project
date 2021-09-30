@@ -7,11 +7,7 @@ $(window).on("scroll", function (e) {
     e.preventDefault()
 });
 
-// for (i = 0; i < $('.box-wrapper').length; i++) {
-//     $('.box-wrapper').eq(i).on('click', function () {
-//         $(this).toggleClass('active')
-//     })
-// }
+
 
 $(document).ready(function () {
     $('.box-wrapper').on('click', function () {
