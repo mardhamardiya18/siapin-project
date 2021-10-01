@@ -126,7 +126,6 @@ p, h1{
     font-size: 36px;
     font-family: var(--heading-font);
     width: 85%;
-    line-height: 65px;
     color: var(--hitam-pallet);
  }
  .course .tab{
@@ -135,6 +134,7 @@ p, h1{
      padding: 10px 20px;
      border-radius: 10px;
      cursor: pointer;
+     margin: 10px;
  }
  .course .tab:hover{
     background-color: var(--hijau-pallet);
@@ -146,7 +146,7 @@ p, h1{
  }
  .card{
      position: relative;
-     padding-top: 100px;
+     padding-top: 50px;
      height: 450px;
      overflow-y: hidden;
      margin: 10px;
@@ -157,11 +157,11 @@ p, h1{
      background-color: #fff;
     position: absolute;
     bottom: 0;
-    height: 165px;
+    height: 180px;
     transition: .5s ease-in-out;
  }
  .card:hover .card-body{
-     height: 330px;
+     height: 350px;
      transition: .5s ease-in-out;
  }
  .card .btn-daftar{
@@ -181,7 +181,7 @@ p, h1{
  }
  .card .label{
      background-color: var(--orange-pallet);
-    width: 30%;
+    width: 35%;
     border-radius: 5px;
     color: #fff;
  }
@@ -214,6 +214,28 @@ p, h1{
         padding: 4rem 2rem;
         border-radius: 40px;
     }
+    .home .heading-home{
+        font-size: 36px;
+        line-height: 50px;
+     }
+     .course .heading-course{
+        font-size: 30px;
+     }
+     .card{
+         width: 18rem !important;
+         height: 400px;
+     }
+     .card .label{
+         width: 40%;
+     }
+     .card .title-card{
+        font-size: 23px;
+    }
+    .card .card-body{
+        height: 160px;
+    }
+     
+
  }
 
  @media screen and (max-width: 768px) {
@@ -246,5 +268,8 @@ p, h1{
      .form-input i{
         padding: 8px 15px;
         font-size: 1.5rem;
+     }
+     .course .tab{
+        font-size: 13px;
      }
  }
